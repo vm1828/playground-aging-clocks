@@ -8,6 +8,11 @@ real public data, a reproducible pipeline I can later point at harder problems
 
 Analysis-first: correct result on real data before any generalization.
 
+## Working style
+
+- Default to conversation. Do not write code, create files, edit docs, install dependencies, or fetch data unless I explicitly ask. I will always tell you when to act.
+- Suggestions are fine ("we could capture this in theory.md if you want"); stop after the suggestion and wait for the green light.
+
 ## Reproducibility (non-negotiable)
 
 - every result traces to: dataset accession/version, code commit, params. No orphan numbers.

@@ -1,12 +1,18 @@
-# # Data — never commit raw datasets
-# data/raw/
-# data/processed/
-# *.idat
-# *.idat.gz
-# *.csv.gz
+# Data — never commit raw datasets, but keep the dirs in git via .gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.idat
+*.idat.gz
+*.csv.gz
 
-# # Figures are fine to commit; outputs/scratch are not
-# /scratch/
+# Scratch docs — temporary working notes that should never be committed
+docs/scratch/*
+!docs/scratch/.gitkeep
+
+# Figures are fine to commit; outputs/scratch are not
+/scratch/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

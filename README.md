@@ -12,15 +12,13 @@ predicted and chronological age (**age acceleration**) as a systemic signal of a
 
 ## Data
 
-Public methylation datasets from NCBI GEO: GSE40279 (blood, primary), GSE74193 (brain, transfer test).
+Public methylation datasets from NCBI GEO. Specific dataset still open.
 
 ## Stack
 
-Python · `pyaging` · `scikit-learn` · `pandas` · `matplotlib` · `jupyter`
+Python · `pandas` · `scikit-learn` · `matplotlib` · `jupyter`
 
-## Glossary
+## Concepts
 
-- **CpG site** — genomic position where methylation occurs; the model's features.
-- **Beta value** — 0–1, how methylated one CpG is in one sample.
-- **Aging clock** — model mapping CpG values to predicted age.
-- **Age acceleration** — predicted minus chronological age; the signal of interest.
+Field terminology (CpG site, beta value, methylation array, Illumina ID,
+aging clock, age acceleration, etc.) is defined in [docs/theory.md](docs/theory.md).
