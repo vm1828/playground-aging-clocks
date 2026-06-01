@@ -33,4 +33,29 @@ Apply before writing anything else:
 - no backcompat shims
 - 3 similar lines > premature abstraction
 
+## Jupyter notebooks
+
+Outline every notebook with markdown-header cells in this fixed order and
+casing — R-style: level-1 `#` ALL-CAPS, level-2 `##` Capitalized.
+
+```text
+# SETUP
+## Install     — package installs; omit when the project manages deps
+## Import      — imports only, grouped per Code style
+## Constants   — paths, accessions, params, seeds (no hardcoded values below)
+## Utils       — helpers reused later in the notebook
+# DATA
+## Download    — fetch raw external data (checksum-verified)
+## Load        — read into memory
+## EDA         — shapes, distributions, sanity checks
+# ANALYSIS     — the core computation; rename to the verb that fits (MODEL, PREDICT, …)
+# RESULTS
+## Figures     — plots
+## Export      — write outputs to data/processed
+```
+
+- One markdown cell per header; at most one line of prose under it.
+- YAGNI: emit a header only when a cell fills it — never an empty section.
+- This is the superset/order; a given notebook uses the subset it needs.
+
 @PROJECT.md
